@@ -92,7 +92,7 @@
             "name": "request",
             "actions": [
               {
-                "input": "{\"account_identifier\": {{random_account.account_identifier}}, \"minimum_balance\":{\"value\": \"10000000000000000\", \"currency\": {{currency}}}}",
+                "input": "{\"account_identifier\": {{random_account.account_identifier}}, \"minimum_balance\":{\"value\": \"20000000000000000\", \"currency\": {{currency}}}}",
                 "type": "find_balance",
                 "output_path": "loaded_account"
               }
