@@ -316,7 +316,7 @@
             "name": "staking",
             "actions": [
               {
-                "input": "{\"network\":\"Testnet\", \"blockchain\":\"Harmony\", \"sub_network_identifier\":{\"network\":\"shard 0\", \"metadata\":{\"is_beacon\": true}}}",
+                "input": "{\"network\":\"Testnet\", \"blockchain\":\"Harmony\", \"sub_network_identifier\":{\"network\":\"shard 1\", \"metadata\":{\"is_beacon\": true}}}",
                 "type": "set_variable",
                 "output_path": "staking.network"
               },
