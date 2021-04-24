@@ -309,7 +309,7 @@
         ]
       },
       {
-        "name": "create_validator",
+        "name": "delegate",
         "concurrency": 1,
         "scenarios": [
           {
@@ -346,12 +346,12 @@
                 "output_path": "transfer.confirmation_depth"
               },
               {
-                "input": "[{\"operation_identifier\":{\"index\":0},\"type\":\"CreateValidator\",\"status\":\"\",\"account\":{{sender.account_identifier}},\"amount\":{\"value\":\"0\",\"currency\":{\"symbol\":\"ONE\",\"decimals\":18}},\"Metadata\":{\"validatorAddress\":\"one1a0x3d6xpmr6f8wsyaxd9v36pytvp48zckswvv9\",\"commissionRate\":100000000000000000,\"maxCommissionRate\":900000000000000000,\"maxChangeRate\":50000000000000000,\"minSelfDelegation\":10,\"maxTotalDelegation\":3000,\"amount\":100,\"name\":\"Alice\",\"website\":\"alice.harmony.one\",\"identity\":\"alice\",\"securityContact\":\"Bob\",\"details\":\"Don't mess with me!!!\"}}]",
+                "input": "[{\"operation_identifier\":{\"index\":0},\"type\":\"Delegate\",\"status\":\"\",\"account\":{{sender.account_identifier}},\"amount\":{\"value\":\"0\",\"currency\":{\"symbol\":\"ONE\",\"decimals\":18}},\"Metadata\":{\"validatorAddress\":\"one1a0x3d6xpmr6f8wsyaxd9v36pytvp48zckswvv9\",\"delegatorAddress\":\"one1a0x3d6xpmr6f8wsyaxd9v36pytvp48zckswvv9\",\"amount\":10}}]",
                 "type": "set_variable",
                 "output_path": "transfer.operations"
               },
               {
-                "input": "{\"from_shard\":0,\"to_shard\":0,\"slot_pub_keys\":[\"0xb9486167ab9087ab818dc4ce026edb5bf216863364c32e42df2af03c5ced1ad181e7d12f0e6dd5307a73b62247608611\"]}",
+                "input": "{\"from_shard\":0,\"to_shard\":0}",
                 "type": "set_variable",
                 "output_path": "transfer.preprocess_metadata"
               }
@@ -365,7 +365,7 @@
       "transfer": 1,
       "cross_shard_transfer": 1,
       "contract_creation": 1,
-      "create_validator": 1
+      "delegate": 1
     }
   }
 }
