@@ -379,7 +379,8 @@
       "create_account": 1,
       "transfer": 1,
       "cross_shard_transfer": 1,
-      "contract_creation": 1
+      "contract_creation": 1,
+      "create_validator": 1
     }
   }
 }
