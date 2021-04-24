@@ -313,7 +313,7 @@
         "concurrency": 1,
         "scenarios": [
           {
-            "name": "create_validator",
+            "name": "transfer",
             "actions": [
               {
                 "input": "{\"network\":\"Testnet\", \"blockchain\":\"Harmony\", \"sub_network_identifier\":{\"network\":\"shard 0\", \"metadata\":{\"is_beacon\": true}}}",
