@@ -29,7 +29,7 @@
     "exempt_accounts": "",
     "bootstrap_balances": "",
     "interesting_accounts": "",
-    "reconciliation_disabled": false,
+    "reconciliation_disabled": true,
     "inactive_discrepency_search_disabled": false,
     "balance_tracking_disabled": false,
     "coin_tracking_disabled": false,
