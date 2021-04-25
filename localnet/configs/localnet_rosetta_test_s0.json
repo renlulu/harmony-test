@@ -326,12 +326,12 @@
                 "output_path": "currency"
               },
               {
-                "input": "{\"minimum_balance\":{\"value\": \"10000000000000000\", \"currency\": {{currency}}}}",
+                "input": "{\"minimum_balance\":{\"value\": \"20000000000000000\", \"currency\": {{currency}}}}",
                 "type": "find_balance",
                 "output_path": "sender"
               },
               {
-                "input": "\"10600000000000000\"",
+                "input": "\"20000000000000000\"",
                 "type": "set_variable",
                 "output_path": "max_fee"
               },
@@ -346,7 +346,7 @@
                 "output_path": "transfer.confirmation_depth"
               },
               {
-                "input": "[{\"operation_identifier\":{\"index\":0},\"type\":\"Delegate\",\"status\":\"\",\"account\":{{sender.account_identifier}},\"amount\":{\"value\":\"-10\",\"currency\":{\"symbol\":\"ONE\",\"decimals\":18}},\"Metadata\":{\"validatorAddress\":\"one1a0x3d6xpmr6f8wsyaxd9v36pytvp48zckswvv9\",\"delegatorAddress\":\"one1a0x3d6xpmr6f8wsyaxd9v36pytvp48zckswvv9\",\"amount\":10}}]",
+                "input": "[{\"operation_identifier\":{\"index\":0},\"type\":\"Delegate\",\"status\":\"\",\"account\":{{sender.account_identifier}},\"amount\":{\"value\":\"-10\",\"currency\":{\"symbol\":\"ONE\",\"decimals\":18}},\"Metadata\":{\"validatorAddress\":{{sender.account_identifier.address}},\"delegatorAddress\":{{sender.account_identifier.address},\"amount\":10}}]",
                 "type": "set_variable",
                 "output_path": "transfer.operations"
               },
