@@ -66,6 +66,20 @@
           "symbol": "ONE",
           "decimals": 18
         }
+      },
+      {
+        "privkey": "4edef2c24995d15b0e25cbd152fb0e2c05d3b79b9c2afd134e6f59f91bf99e48",
+        "account_identifier": {
+          "address": "one1a0x3d6xpmr6f8wsyaxd9v36pytvp48zckswvv9",
+          "metadata": {
+            "hex_address": "0xebcd16e8c1d8f493ba04e99a56474122d81a9c58"
+          }
+        },
+        "curve_type": "secp256k1",
+        "currency": {
+          "symbol": "ONE",
+          "decimals": 18
+        }
       }
     ],
     "workflows": [
@@ -346,7 +360,7 @@
                 "output_path": "transfer.confirmation_depth"
               },
               {
-                "input": "[{\"operation_identifier\":{\"index\":0},\"type\":\"CreateValidator\",\"status\":\"\",\"account\":{{sender.account_identifier}},\"amount\":{\"value\":\"-100\",\"currency\":{\"symbol\":\"ONE\",\"decimals\":18}},\"Metadata\":{\"validatorAddress\":{{sender.account_identifier.address}},\"commissionRate\":100000000000000000,\"maxCommissionRate\":900000000000000000,\"maxChangeRate\":50000000000000000,\"minSelfDelegation\":10,\"maxTotalDelegation\":3000,\"amount\":100,\"name\":\"Alice\",\"website\":\"alice.harmony.one\",\"identity\":\"alice\",\"securityContact\":\"Bob\",\"details\":\"Don't mess with me!!!\"}}]",
+                "input": "[{\"operation_identifier\":{\"index\":0},\"type\":\"CreateValidator\",\"status\":\"\",\"account\":{\"address\":\"one1a0x3d6xpmr6f8wsyaxd9v36pytvp48zckswvv9\",\"metadata\":{\"hex_address\":\"0xebcd16e8c1d8f493ba04e99a56474122d81a9c58\"}},\"amount\":{\"value\":\"-100\",\"currency\":{\"symbol\":\"ONE\",\"decimals\":18}},\"Metadata\":{\"validatorAddress\":\"one1a0x3d6xpmr6f8wsyaxd9v36pytvp48zckswvv9\",\"commissionRate\":100000000000000000,\"maxCommissionRate\":900000000000000000,\"maxChangeRate\":50000000000000000,\"minSelfDelegation\":10,\"maxTotalDelegation\":3000,\"amount\":100,\"name\":\"Alice\",\"website\":\"alice.harmony.one\",\"identity\":\"alice\",\"securityContact\":\"Bob\",\"details\":\"Don't mess with me!!!\"}}]",
                 "type": "set_variable",
                 "output_path": "transfer.operations"
               },
