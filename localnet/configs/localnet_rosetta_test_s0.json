@@ -360,12 +360,12 @@
                 "output_path": "transfer.confirmation_depth"
               },
               {
-                "input": "[{\"operation_identifier\":{\"index\":0},\"type\":\"CreateValidator\",\"status\":\"\",\"account\":{\"address\":\"one1a0x3d6xpmr6f8wsyaxd9v36pytvp48zckswvv9\",\"metadata\":{\"hex_address\":\"0xebcd16e8c1d8f493ba04e99a56474122d81a9c58\"}},\"amount\":{\"value\":\"-100\",\"currency\":{\"symbol\":\"ONE\",\"decimals\":18}},\"Metadata\":{\"validatorAddress\":\"one1a0x3d6xpmr6f8wsyaxd9v36pytvp48zckswvv9\",\"commissionRate\":100000000000000000,\"maxCommissionRate\":900000000000000000,\"maxChangeRate\":50000000000000000,\"minSelfDelegation\":10,\"maxTotalDelegation\":3000,\"amount\":100,\"name\":\"Alice\",\"website\":\"alice.harmony.one\",\"identity\":\"alice\",\"securityContact\":\"Bob\",\"details\":\"Don't mess with me!!!\"}}]",
+                "input": "[{\"operation_identifier\":{\"index\":0},\"type\":\"CreateValidator\",\"status\":\"\",\"account\":{\"address\":\"one1a0x3d6xpmr6f8wsyaxd9v36pytvp48zckswvv9\",\"metadata\":{\"hex_address\":\"0xebcd16e8c1d8f493ba04e99a56474122d81a9c58\"}},\"amount\":{\"value\":\"-100\",\"currency\":{\"symbol\":\"ONE\",\"decimals\":18}},\"Metadata\":{\"validatorAddress\":\"one1pdv9lrdwl0rg5vglh4xtyrv3wjk3wsqket7zxy\",\"commissionRate\":100000000000000000,\"maxCommissionRate\":900000000000000000,\"maxChangeRate\":50000000000000000,\"minSelfDelegation\":10,\"maxTotalDelegation\":3000,\"amount\":100,\"name\":\"Alice\",\"website\":\"alice.harmony.one\",\"identity\":\"alice\",\"securityContact\":\"Bob\",\"details\":\"Don't mess with me!!!\"}}]",
                 "type": "set_variable",
                 "output_path": "transfer.operations"
               },
               {
-                "input": "{\"from_shard\":0,\"to_shard\":0,\"slot_pub_keys\":[\"0xb9486167ab9087ab818dc4ce026edb5bf216863364c32e42df2af03c5ced1ad181e7d12f0e6dd5307a73b62247608611\"]}",
+                "input": "{\"from_shard\":0,\"to_shard\":0,\"slot_pub_keys\":[\"0x30b2c38b1316da91e068ac3bd8751c0901ef6c02a1d58bc712104918302c6ed03d5894671d0c816dad2b4d303320f202\"],\"slot_key_sigs\":[\"0x68f800b6adf657b674903e04708060912b893b7c7b500788808247550ab3e186e56a44ebf3ca488f8ed1a42f6cef3a04bd5d2b2b7eb5a767848d3135b362e668ce6bba42c7b9d5666d8e3a83be707b5708e722c58939fe9b07c170f3b7062414\"]}",
                 "type": "set_variable",
                 "output_path": "transfer.preprocess_metadata"
               }
@@ -411,7 +411,7 @@
                 "output_path": "transfer.confirmation_depth"
               },
               {
-                "input": "[{\"operation_identifier\":{\"index\":0},\"type\":\"Delegate\",\"status\":\"\",\"account\":{{sender.account_identifier}},\"amount\":{\"value\":\"-10\",\"currency\":{\"symbol\":\"ONE\",\"decimals\":18}},\"Metadata\":{\"validatorAddress\":\"one1a0x3d6xpmr6f8wsyaxd9v36pytvp48zckswvv9\",\"delegatorAddress\":{{sender.account_identifier.address}},\"amount\":10}}]",
+                "input": "[{\"operation_identifier\":{\"index\":0},\"type\":\"Delegate\",\"status\":\"\",\"account\":{{sender.account_identifier}},\"amount\":{\"value\":\"-10\",\"currency\":{\"symbol\":\"ONE\",\"decimals\":18}},\"Metadata\":{\"validatorAddress\":\"one1pdv9lrdwl0rg5vglh4xtyrv3wjk3wsqket7zxy\",\"delegatorAddress\":{{sender.account_identifier.address}},\"amount\":10}}]",
                 "type": "set_variable",
                 "output_path": "transfer.operations"
               },
